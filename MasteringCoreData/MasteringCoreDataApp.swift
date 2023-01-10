@@ -2,7 +2,7 @@
 //  MasteringCoreDataApp.swift
 //  MasteringCoreData
 //
-//  Created by Irene on 10/1/23.
+//  Created by Irene on 9/1/23.
 //
 
 import SwiftUI
@@ -11,7 +11,10 @@ import SwiftUI
 struct MasteringCoreDataApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            // Create a single instance of the StorageProvider class and pass that instance around 
+            MoviesView(storageProvider: StorageProvider())
         }
     }
 }
+
